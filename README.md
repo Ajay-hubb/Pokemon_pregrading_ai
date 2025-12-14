@@ -85,13 +85,16 @@ Each patch from every uploaded angle is processed, then aggregated across angles
 Slight overlap between patches can improve detection at boundaries.
 
 Technical Stack
-Component Technology Purpose
-Programming Language Python 3.10+ Core development
-Object Detection YOLOv8 (PyTorch) Detect defects on car images
-Computer Vision OpenCV, PIL Preprocessing, alignment, annotation
-Dataset Labeling Roboflow Annotate defects and export YOLO-formatted datasets
-Rule-based PSA Aggregation Python Calculate PSA-style grades
-Backend / Demo Google Colab + Gradio Run interactive demo
-Database PostgreSQL Store user-submitted grades
-Validation PSA slabs + synthetic/demo images Compare predictions to real data
-Folder Structure
+
+## Technical Stack
+
+| Component                  | Technology                        | Purpose                                             |
+| -------------------------- | --------------------------------- | --------------------------------------------------- |
+| Programming Language       | Python 3.10+                      | Core development                                    |
+| Object Detection           | YOLOv8 (PyTorch)                  | Detect defects on card images                       |
+| Computer Vision            | OpenCV, PIL                       | Preprocessing, alignment, annotation                |
+| Dataset Labeling           | Roboflow                          | Annotate defects and export YOLO-formatted datasets |
+| Rule-based PSA Aggregation | Python                            | Calculate PSA-style grades                          |
+| Database                   | PostgreSQL                        | Store user-submitted grades                         |
+| Validation                 | PSA slabs + synthetic/demo images | Compare predictions to real data                    |
+| Mobile Development         | Android / iOS                     | Allows users to access pre-grading AI on mobile     |
